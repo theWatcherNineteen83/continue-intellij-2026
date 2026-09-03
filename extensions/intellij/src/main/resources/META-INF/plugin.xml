@@ -9,6 +9,11 @@
     <depends>com.intellij.modules.platform</depends>
     <depends>org.jetbrains.plugins.terminal</depends>
 
+    <!-- JCEF (com.intellij.ui.jcef.JBCefApp) was extracted into a separate bundled plugin
+         starting with IntelliJ 2026.2 (before it lived in the core platform).
+         Optional so the plugin still builds against older SDKs where JCEF is in core. -->
+    <depends optional="true">com.intellij.modules.jcef</depends>
+
     <!-- See here for why this is optional:  https://github.com/continuedev/continue/issues/2775#issuecomment-2535620877-->
     <depends optional="true" config-file="continueintellijextension-withJSON.xml">
         com.intellij.modules.json

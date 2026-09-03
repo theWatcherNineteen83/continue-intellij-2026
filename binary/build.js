@@ -74,6 +74,15 @@ async function buildWithEsbuild() {
     // https://github.com/evanw/esbuild/issues/1492#issuecomment-893144483
     inject: ["./importMetaUrl.js"],
     define: { "import.meta.url": "importMetaUrl" },
+    alias: {
+      core: path.join(__dirname, "..", "core"),
+      "@continuedev/llm-info": path.join(__dirname, "..", "packages", "llm-info"),
+      "@continuedev/openai-adapters": path.join(__dirname, "..", "packages", "openai-adapters"),
+      "@continuedev/terminal-security": path.join(__dirname, "..", "packages", "terminal-security"),
+      "@continuedev/config-yaml": path.join(__dirname, "..", "packages", "config-yaml"),
+      "@continuedev/config-types": path.join(__dirname, "..", "packages", "config-types"),
+      "@continuedev/fetch": path.join(__dirname, "..", "packages", "fetch"),
+    },
   });
 }
 

@@ -1,5 +1,12 @@
 <h1 align="center">Continue</h1>
 
+> ⚠️ **This is a fork** — `theWatcherNineteen83/continue-intellij-2026`, maintained for
+> **IntelliJ IDEA 2026.x compatibility**. Upstream `continuedev/continue` is read-only.
+> See **[CONTINUE-2026-FORK-README.md](CONTINUE-2026-FORK-README.md)** for build/install
+> instructions and the list of API/runtime/build fixes.
+
+
+
 <p align="center">Pioneering open-source coding agent</p>
 
 <div align="center">
